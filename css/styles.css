@@ -267,6 +267,13 @@ body {
   letter-spacing: 0.03em;
 }
 
+.team-soc-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--current-color);
+  display: block;
+}
 /*Work*/
 .section-work {
   padding-top: 0px;
