@@ -239,6 +239,12 @@ body {
   width: 270px;
   gap: 30px;
 }
+.feature-list::before {
+  display: inline-block;
+  content: '';
+  width: 70px;
+  height: 70px;
+}
 .feature {
   justify-content: space-between;
 }
@@ -267,13 +273,6 @@ body {
   letter-spacing: 0.03em;
 }
 
-.team-soc-link {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background-color: var(--current-color);
-  display: block;
-}
 /*Work*/
 .section-work {
   padding-top: 0px;
@@ -356,6 +355,14 @@ img {
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+.team-soc-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--current-color);
+  display: block;
 }
 /*Contacts*/
 .footer {
