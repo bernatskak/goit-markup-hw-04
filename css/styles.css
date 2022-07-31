@@ -129,6 +129,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  align-items: flex-end;
 }
 .contact {
   margin-left: auto;
@@ -149,7 +150,7 @@ body {
 .contact-mail:focus {
   color: var(--current-color);
 }
-.contact-icon {
+.contact-mail-icon {
   fill: currentColor;
   margin-right: 10px;
   background-position: center;
@@ -176,7 +177,6 @@ body {
   margin-right: 10px;
   background-position: center;
   background-size: contain;
-  align-items: baseline;
 }
 /*Hero*/
 
@@ -255,30 +255,46 @@ body {
 .feature-list {
   width: 270px;
 }
-.feature-list::before {
+/*.feature-list::before {
   display: block;
   content: '';
   height: 120px;
-  background: var(--badge-bg-color);
+  background-color: var(--badge-bg-color);
   border-radius: 4px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
+
 .icon-antenna::before {
   background-image: url(../images/antenna.svg);
+  height: 70px;
 }
+
 .icon-clock::before {
   background-image: url(../images/clock.svg);
+  height: 70px;
 }
 .icon-diagram::before {
   background-image: url(../images/diagram.svg);
+  height: 70px;
 }
 .icon-astronaut::before {
   background-image: url(../images/astronaut.svg);
-}
+  height: 70px;
+}*/
 .feature {
   gap: 30px;
+}
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  background-color: var(--badge-bg-color);
+}
+.feature-icon {
 }
 .feature .title {
   margin-top: 30px;
@@ -396,7 +412,7 @@ img {
   display: flex;
   justify-content: center;
   gap: 10px;
-  margin: 16px 32px 30px 32px;
+  margin-top: 16px;
 }
 .team-soc-link {
   width: 44px;
@@ -405,26 +421,21 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #afb1b8;
 }
 .team-soc-item {
   width: 44px;
   height: 44px;
 }
 .team-soc-icon {
-  fill: #afb1b8;
-}
-.team-soc-icon:hover,
-.team-soc-icon:focus {
-  fill: var(--main-light-color);
+  fill: currentColor;
 }
 .team-soc-link:hover,
 .team-soc-link:focus {
   background-color: var(--current-color);
+  color: var(--main-light-color);
 }
-/*.team-soc-link:hover,
-.team-soc-link:focus .team-soc-icon {
-  fill: var(--current-color);
-}*/
+
 /*Clients*/
 .customers-title {
   margin-top: 0px;
@@ -446,18 +457,17 @@ img {
   align-items: center;
   justify-content: center;
   border: 1px solid #afb1b8;
+  color: #afb1b8;
   border-radius: 4px;
 }
 .clients-icon {
-  fill: #afb1b8;
+  fill: currentColor;
 }
-.clients-icon:hover,
-.clients-icon:focus {
-  fill: var(--current-color);
-}
+
 .clients-link:hover,
 .clients-link:focus {
   border-color: var(--current-color);
+  color: var(--current-color);
 }
 /*Contacts*/
 .footer {
@@ -521,11 +531,6 @@ img {
 }
 .container-footer {
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  width: 1200px;
   align-items: baseline;
 }
 .container-social {
