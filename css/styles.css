@@ -129,7 +129,6 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  align-items: flex-end;
 }
 .contact {
   margin-left: auto;
@@ -137,7 +136,11 @@ body {
 .contact .contact-type:last-child {
   margin-right: 0px;
 }
-.contact-mail {
+.contact-mail,
+.contact-tel {
+  display: flex;
+  align-items: center;
+  padding: 22px 6px;
   color: var(--secondary-color);
 
   font-weight: 500;
@@ -160,14 +163,7 @@ body {
 .contact-icon:focus {
   color: var(--current-color);
 }
-.contact-tel {
-  color: var(--secondary-color);
 
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-}
 .contact-tel:hover,
 .contact-tel:focus {
   color: var(--current-color);
@@ -376,6 +372,7 @@ img {
   column-gap: 30px;
 }
 .team-item {
+  background-color: var(--main-light-color);
   width: calc((100% - 60px) / 3);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
