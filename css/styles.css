@@ -1,7 +1,7 @@
 :root {
   /* Fonts */
-  --main-font-family: 'Roboto', sans-serif;
-  --secondary-font-family: 'Raleway', sans-serif;
+  --main-font-family: "Roboto", sans-serif;
+  --secondary-font-family: "Raleway", sans-serif;
   /* Colors */
   --main-dark-color: #000;
   --main-light-color: #fff;
@@ -184,7 +184,10 @@ body {
   padding-top: 200px;
   padding-bottom: 200px;
   /*background-color: var(--border-color);*/
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
     url(../images/hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -486,7 +489,7 @@ img {
 .secondary-current {
   color: var(--main-light-color);
 
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
